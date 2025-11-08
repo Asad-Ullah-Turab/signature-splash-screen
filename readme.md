@@ -1,5 +1,3 @@
-&lt;!-- README.md for Asad Signature Plymouth Theme --&gt;
-
 # Asad Signature Plymouth Theme
 
 This repository contains a **custom Plymouth boot splash theme** that animates a handwritten signature during system boot.
