@@ -67,7 +67,7 @@ sudo mkinitcpio -P
 
 - This ensures Plymouth is loaded at boot, preventing text messages from appearing instead of the animation.
 
-### 3️⃣ Reboot to see the animation
+### 4️⃣Reboot to see the animation
 
 ```
 sudo reboot
