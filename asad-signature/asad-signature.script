@@ -1,0 +1,30 @@
+# Screen size
+screen_width = Window.GetWidth();
+screen_height = Window.GetHeight();
+screen_half_w = screen_width / 2;
+screen_half_h = screen_height / 2;
+
+# Load signature frames
+TOTAL_FRAMES = 193;
+for (i = 0; i < TOTAL_FRAMES; i++)
+    flyingman_image[i] = Image("sig_" + i + ".png");
+
+flyingman_sprite = Sprite();
+
+# Center the sprite
+flyingman_sprite.SetX(Window.GetX() + (screen_width/2 - flyingman_image[0].GetWidth()/2));
+flyingman_sprite.SetY(Window.GetY() + (screen_height/2 - flyingman_image[0].GetHeight()/2));
+
+progress = 0;
+
+fun refresh_callback ()
+{
+    if (progress < TOTAL_FRAMES) {
+        flyingman_sprite.SetImage(flyingman_image[progress]);
+        progress++;
+    } else {
+        flyingman_sprite.SetImage(flyingman_image[TOTAL_FRAMES-1]);
+    }
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);

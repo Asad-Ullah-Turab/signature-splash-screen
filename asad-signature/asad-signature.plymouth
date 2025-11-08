@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=asad-signature
+Description=handwritten signature animation
+Comment=created by asad-ullah-turab (github)
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/asad-signature
+ScriptFile=/usr/share/plymouth/themes/asad-signature/asad-signature.script
